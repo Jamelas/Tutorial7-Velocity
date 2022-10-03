@@ -1,15 +1,15 @@
 #set($salutations = "MALE")
-#if($person.gender == $salutations)
+#if($p.gender == $salutations)
 #set($salutations = "Mr")
 #else
 #set($salutations = "Mrs")
 #end
 To
-$salutations $person.firstName $person.name
-$person.address.number $person.address.street
-$person.address.town
+$salutations $p.firstName $p.name
+$p.address.number $p.address.street
+$p.address.town
 
-Dear $person.firstName ,
+Dear $p.firstName ,
 
 I would like to invite you to my party this Saturday, 8pm at my place.
 
