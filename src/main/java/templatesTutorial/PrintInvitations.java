@@ -24,7 +24,7 @@ public class PrintInvitations {
         VelocityContext context = new VelocityContext();
         Template template = Velocity.getTemplate("letter.vm");
 
-        FileWriter out = new FileWriter("letter1.txt");
+        FileWriter out = new FileWriter("invitations.txt");
         for(Person i : persons) {
             context.put("person", i);
             template.merge(context, out);
