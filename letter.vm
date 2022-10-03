@@ -1,6 +1,11 @@
-
+#set($salutations = "MALE")
+#if($person.gender == $salutations)
+#set($salutations = "Mr")
+#else
+#set($salutations = "Mrs")
+#end
 To
-$person.firstName $person.name
+$salutations $person.firstName $person.name
 $person.address.number $person.address.street
 $person.address.town
 

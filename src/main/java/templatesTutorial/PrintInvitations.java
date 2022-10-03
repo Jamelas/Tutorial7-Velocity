@@ -7,7 +7,6 @@ import org.apache.velocity.app.Velocity;
 import java.beans.XMLDecoder;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.util.List;
 
@@ -31,8 +30,5 @@ public class PrintInvitations {
             template.merge(context, out);
         }
         out.close();
-
-
-
     }
 }
